@@ -1,0 +1,16 @@
+version: '2'
+services:
+  frontend:
+    image: front-quesito:latest
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+  
+  backend:
+    image: back-quesito:latest
+    restart: always
+    ports:
+      - 3005:3005
