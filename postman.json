@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "da5cffbe-b267-423e-a168-e32ded1b2346",
+		"name": "Journeys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27521080"
+	},
+	"item": [
+		{
+			"name": "Journeys",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Header>\n        <IntegrationAuth xmlns=\"http://www.hubinfo.org/2016/07\">\n            <partnerCode>GITOPER</partnerCode>\n            <userName>GITOPER</userName>\n            <password>Gt975317JOU</password>\n        </IntegrationAuth>\n    </soap:Header>\n    <soap:Body>\n        <queryCitiesXML xmlns=\"http://www.hubinfo.org/2016/07\">\n            <XML>string</XML>\n        </queryCitiesXML>\n    </soap:Body>\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "http://journeysh.redirectme.net/hubserver/hotelavail/list?partner_id=GITOPER&target=1&version=1.6&start=2023-12-17&end=2023-12-27&city=RIO&rooms=[{\"Guests\":[{\"AgeQualifying\":0,\"Age\":0,\"Count\":2}]}]&hotel_list=[]&user_name=GITOPER&password=Gt975317JOU",
+					"protocol": "http",
+					"host": [
+						"journeysh",
+						"redirectme",
+						"net"
+					],
+					"path": [
+						"hubserver",
+						"hotelavail",
+						"list"
+					],
+					"query": [
+						{
+							"key": "partner_id",
+							"value": "GITOPER"
+						},
+						{
+							"key": "target",
+							"value": "1"
+						},
+						{
+							"key": "version",
+							"value": "1.6"
+						},
+						{
+							"key": "start",
+							"value": "2023-12-17"
+						},
+						{
+							"key": "end",
+							"value": "2023-12-27"
+						},
+						{
+							"key": "city",
+							"value": "RIO"
+						},
+						{
+							"key": "rooms",
+							"value": "[{\"Guests\":[{\"AgeQualifying\":0,\"Age\":0,\"Count\":2}]}]"
+						},
+						{
+							"key": "hotel_list",
+							"value": "[]"
+						},
+						{
+							"key": "user_name",
+							"value": "GITOPER"
+						},
+						{
+							"key": "password",
+							"value": "Gt975317JOU"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
